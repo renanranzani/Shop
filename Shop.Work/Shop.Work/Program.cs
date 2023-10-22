@@ -1,9 +1,9 @@
-using Shop.Work;
+using Shop.Work.Workers;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddHostedService<Worker>();
+        services.AddHostedService<ShopWorker>();
     })
     .Build();
 

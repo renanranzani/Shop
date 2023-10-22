@@ -1,10 +1,10 @@
-namespace Shop.Work
+namespace Shop.Work.Workers
 {
-    public class Worker : BackgroundService
+    public class ShopWorker : BackgroundService
     {
-        private readonly ILogger<Worker> _logger;
+        private readonly ILogger<ShopWorker> _logger;
 
-        public Worker(ILogger<Worker> logger)
+        public ShopWorker(ILogger<ShopWorker> logger)
         {
             _logger = logger;
         }
